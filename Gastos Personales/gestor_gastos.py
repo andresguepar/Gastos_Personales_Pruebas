@@ -18,7 +18,7 @@ class GestorGastos:
         self.transacciones.append({
             "fecha": fecha,
             "tipo": tipo,
-            "categoria": categoria,
+            "categoria": categoria.upper(),
             "monto": monto
         })
 
@@ -60,7 +60,7 @@ class GestorGastos:
                 categorias[t['categoria']]['gastos'] += t['monto']
 
         # Genera el informe por categoría
-        informe = f"--- Informe {'de ' + categoria.capitalize() if categoria else 'por Categorías'} ---\n\n"
+        informe = f"--- Informe {'de ' + categoria.upper() if categoria else 'por Categorías'} ---\n\n"
         for cat, valores in categorias.items():
             informe += f"Categoría: {cat}\n"
             informe += f"  Ingresos: {valores['ingresos']}\n"
