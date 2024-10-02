@@ -1,3 +1,4 @@
+# Gestor de Gastos Personales
 Gestor de Gastos Personales
 Este es un Gestor de Gastos Personales construido en Python, utilizando la biblioteca tkinter para la interfaz gráfica de usuario (GUI). La aplicación permite realizar un seguimiento de ingresos y gastos, así como generar informes detallados para ayudar a gestionar las finanzas personales de manera sencilla y eficiente.
 
